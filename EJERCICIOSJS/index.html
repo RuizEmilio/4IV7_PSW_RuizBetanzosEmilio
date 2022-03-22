@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../EJERCICIOSJS/CSS/style.css">
+    <link rel="icon" href="../EJERCICIOSJS/JPG/IconoGato.jpg">
+    <title>EjerciciosJS</title>
+    <script src='../EJERCICIOSJS/SCRIPTS/funcions.js'></script>
+</head>
+<body>
+    <div class = 'container1'>
+        <div class = 'container3-2'>
+            <h1>PROBLEMA 1</h1>
+            <form class="formulario" action="" name="formulario" method="post">
+                <label> Calculo de inversionde capital al 2% mensual</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td>Introduce la cantidad que deseas invertir : $</td>
+                        <td><input class = 'entrada' type="text" name="cantidad" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td> MESES DE PAGO (MAXIMO 48) : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'meses' onkeypress="return validar5(event)">
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="hr1"></td></tr>
+                    <tr>
+                        <td>Su ganancia generada al 2% de interes mensual es de : $</td>
+                        <td><input type="text" name="inversion" id="CantidadConInteres" readonly="readonly" class="input_text"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' type="button" name="enviar" value="CALCULAR INTERES" onclick="interes()">
+                <br>
+                <input class = 'boton1' type="button" value="BORRAR DATOS" name="borrar" onclick="borrarF1()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <div class = 'container1'>
+        <div class = 'container3-2'>
+            <h1>PROBLEMA 2</h1>
+            <form class = 'formulario' action="" name="formulario1" method="post">
+                <label> Calculo de salario por comisiones en ventas</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td>Introduce el salario fijo : $</td>
+                        <td><input class = 'entrada' type="text" name="salario" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr>
+                        <td> Introduce el valor de la primer venta : $</td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'venta1' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce el valor de la segunda venta : $</td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'venta2' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce el valor de la tercera venta : $</td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'venta3' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="hr1"></td></tr>
+                    <tr>
+                        <td>El monto por concepto de comisiones es de : $</td>
+                        <td><input type="text" name="comisiones" readonly="readonly" class="input_text"></td>
+                    </tr>
+                    <tr>
+                        <td>El salario total del trabajador es de : $</td>
+                        <td><input type="text" name="salarioT" readonly="readonly" class="input_text"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' type="button" name="Calcular" value="Calcular Sueldo" onclick="calcularSueldo()">
+                <br>
+                <input class = 'boton1' type="button" value="Borrar datos" name="borrar1" onclick="borrarF2()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <div class = 'container1'>
+        <div class = 'container3-2'>
+            <h1>PROBLEMA 3</h1>
+            <form class = 'formulario' action="" name="formulario2" method="post">
+                <label> Descuento del 15% sobre la compra</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td>Introduce el monto total de la compra : $</td>
+                        <td><input class = 'entrada' type="text" name="montoI" onkeypress="return validar(event)"></td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="hr1"></td></tr>
+                    <tr>
+                        <td>La compra con descuento del 15% tiene un monto de : $</td>
+                        <td><input type="text" name="costoT" readonly="readonly" class="input_text"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' type="button" name="Calcular" value="Calcular Monto" onclick="calcularCompra()">
+                <br>
+                <input class = 'boton1' type="button" value="Borrar datos" name="borrar1" onclick="borrarF3()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <div class = 'container1'>
+        <div class = 'container3-2'>
+            <h1>PROBLEMA 4</h1>
+            <form class = 'formulario' action="" name="formulario3" method="post">
+                <label> Calculo de promedio final</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td> Introduce la calificacion del 1er parcial : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'calif1' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce la calificacion del 2er parcial : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'calif2' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce la calificacion del 3er parcial : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'calif3' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce la calificacion del trabajo final : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'califTF' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce la calificacion del examen final : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'califEF' onkeypress="return validar(event)">
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="hr1"></td></tr>
+                    <tr>
+                        <td>La calificacion final es de : </td>
+                        <td><input type="text" name="calificacionF" readonly="readonly" class="input_text"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' type="button" name="Calcular" value="Calcular Calificacion" onclick="calcularCalif()">
+                <br>
+                <input class = 'boton1' type="button" value="Borrar datos" name="borrar1" onclick="borrarF4()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <div class = 'container1'>
+        <div class = 'container3-2'>
+            <h1>PROBLEMA 5</h1>
+            <form class = 'formulario' action="" name="formulario4" method="post">
+                <label> Porcentajde de niñas y niños</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td> Introduce la cantidad de niñas en el salon : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'niñas' onkeypress="return validar5(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Introduce la cantidad de niños en el salon : </td>
+                        <td>
+                            <input class = 'entrada' type="text" name = 'niños' onkeypress="return validar5(event)">
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><hr class="hr1"></td></tr>
+                    <tr>
+                        <td>Porcentaje de niños en el salon : </td>
+                        <td><input type="text" name="niñosP" readonly="readonly" class="input_text"></td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de niñas en el salon : </td>
+                        <td><input type="text" name="niñasP" readonly="readonly" class="input_text"></td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' type="button" name="Calcular" value="Calcular Porcentajes" onclick="calcularPorcentaje()">
+                <br>
+                <input class = 'boton1' type="button" value="Borrar datos" name="borrar1" onclick="borrarF5()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <div class = 'container1'>
+        <div class = 'container3-3'>
+            <h1>PROBLEMA 6</h1>
+            <form class = 'formulario' action="" name="formulario5" method="post">
+                <label> Calculo de edad exacta</label>
+                <br>
+                <table class="table1">
+                    <tr>
+                        <td> Escoja su fecha de nacimiento : </td>
+                        <td>
+                            <input class = 'entrada' type="date" id = "fechaN">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class = 'container2'>
+                <input class = 'boton1' id="Calculoedad" type="button" name="Edad" value="Calcular Edad" onclick="calcularEdad()">
+            </div>
+        </div>
+    </div>
+    <hr class = 'hr2'>
+    <footer>
+        <p>EMILIO RUIZ BETANZOS | 4IV7 | 2021090213</p>
+        <a href = '../index.html'>
+            VOLVER AL DIRECTORIO
+        </a>
+    </footer>
+</body>
+</html>
