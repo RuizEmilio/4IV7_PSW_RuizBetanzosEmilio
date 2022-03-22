@@ -1,0 +1,101 @@
+@keyframes cambioColor {
+    from{
+        color: rgb(37, 44, 124);
+        border: 5px solid rgb(37, 44, 124);
+        background-color: rgb(127, 137, 241);
+        border-radius: 50px;
+    }
+    to{
+        color: rgb(59, 73, 224);
+        border: 5px solid rgb(70, 77, 170);
+        background-color: rgb(194, 198, 243);
+        border-radius: 40px;
+    }
+}
+
+*{
+    font-family: sans-serif;
+    color: rgb(37, 44, 124);
+}
+
+body{
+    background-image: url(../JPG/suburban.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    border-bottom: 10px solid rgb(127, 137, 241);
+    width: 100%;
+    display: flex;
+    margin: 0%;
+    background-color: rgb(194, 198, 243);
+}
+
+body::before{
+    content : '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(315deg, #e7e8e9, #c8c7e4);
+    opacity: .5;
+    z-index: -1;
+}
+
+.h5n1{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.container1{
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.table1{
+    background-color: rgba(194, 198, 243, 0.842);
+    border: 10px solid rgb(127, 137, 241);
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+footer{
+    margin-top: 8.5rem;
+    margin-left: 0;
+    padding-left: 0;
+    border-top: 10px solid rgb(127, 137, 241);
+    background-color: rgb(194, 198, 243, 0.842);
+    width: 100%;
+    height: 7rem;
+}
+
+.td1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.td2{
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.accion{
+    border-radius: 50px;
+    color: rgb(37, 44, 124);
+    border: 5px solid rgb(37, 44, 124);
+    background-color: rgb(127, 137, 241);
+    width: 100px;
+    height: 100px;
+    animation: cambioColor 2s alternate infinite;
+}
+
+.salida{
+    background-color: rgb(127, 137, 241);
+    color: rgb(37, 44, 124);
+    border: 5px solid rgb(59, 66, 146);
+
+}
