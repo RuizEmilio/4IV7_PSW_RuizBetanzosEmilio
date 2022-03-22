@@ -1,0 +1,86 @@
+@keyframes mecanografiado {
+    from{
+        width: 0px;
+    }
+
+}
+
+*{
+    font-family: monospace;
+}
+
+body{
+    background-image: url(../JPG/fosforo\ verde.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container1{
+    width: 1275px;
+    height: 475px;
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+    padding: 3rem;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 10px lawngreen;
+}
+
+.container2{
+    width: 630px;
+    height: 475px;
+    float: left;
+    border-color: lawngreen;
+    border-right-style: dashed;
+}
+
+.container3{
+    width: 630px;
+    height: 475px;
+    float: right;
+    align-content: center;
+}
+
+.menu{
+    color: lawngreen;
+}
+
+.article1{
+    width: 610px;
+    height: 125px;
+    color: lawngreen;
+    animation: mecanografiado 2s steps(121);
+}
+
+.article2{
+    width: 610px;
+    height: 125px;
+    color: lawngreen;
+    animation: mecanografiado 3s steps(121);
+}
+
+.article3{
+    width: 610px;
+    height: 125px;
+    color: lawngreen;
+    animation: mecanografiado 2s steps(121);
+}
+
+.article4{
+    width: 610px;
+    height: 125px;
+    color: lawngreen;
+    animation: mecanografiado 2s steps(121);
+}
+
+.table1{
+    width: 610px;
+    height: 125px;
+    border-color: lawngreen;
+    border-style: dashed;
+    animation: mecanografiado 2s steps(121);
+}
+
+iframe{
+    border: 2px solid lawngreen;
+    border-style: dashed;
+}

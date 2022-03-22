@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel='icon' href="JPG/maquinita prendida.jpg">
+    <title>Videojuegos</title>
+</head>
+<body>
+    <nav>
+        <div class = 'container1' id = 'container1'>
+            <script lang = 'JavaScript' src = '../Videojuegos/JS/menu.js'></script>
+            <ul>
+                <div class = 'seleccion1' id = 'seleccion1' onmouseover="over_seleccion('seleccion1' , 'a1')" onmouseout="no_selection('seleccion1' , 'a1')"><li class = 'item1'><a id = 'a1' href = 'INDICES/index1.html'> >>Quienes somos</a></li></div>
+                <div class = 'seleccion2' id = 'seleccion2' onmouseover="over_seleccion('seleccion2' , 'a2')" onmouseout="no_selection('seleccion2' , 'a2')"><li class = 'item2'><a id = 'a2' href = 'INDICES/index2.html'> >>Que hacemos</a></li></div>
+                <div class = 'seleccion3' id = 'seleccion3' onmouseover="over_seleccion('seleccion3' , 'a3')" onmouseout="no_selection('seleccion3' , 'a3')"><li class = 'item3'><a id = 'a3' href = 'INDICES/index3.html'> >>Que vendemos</a></li></div>
+                <div class = 'seleccion4' id = 'seleccion4' onmouseover="over_seleccion('seleccion4' , 'a4')" onmouseout="no_selection('seleccion4' , 'a4')"><li class = 'item4'><a id = 'a4' href = 'INDICES/index4.html'> >>Proximas entregas</a></li></div>
+                <div class = 'seleccion5' id = 'seleccion5' onmouseover="over_seleccion('seleccion5' , 'a5')" onmouseout="no_selection('seleccion5' , 'a5')"><li class = 'item5'><a id = 'a5' href = 'https://www.google.com/maps/place/Centro+de+Estudios+Cient%C3%ADficos+y+Tecnol%C3%B3gicos+N%C2%B0+9+%22Juan+de+Dios+B%C3%A1tiz%22+IPN/@19.4554155,-99.1840779,15z/data=!3m1!4b1!4m5!3m4!1s0x85d1f8bd9777a765:0x57501a5479751d18!8m2!3d19.4554158!4d-99.1753232'> >>Contacto</a></li></div>
+            </ul>   
+            <div class = 'seleccion6' id = 'seleccion6' onmouseover="over_seleccion('seleccion6' , 'a6')" onmouseout="no_selection('seleccion6' , 'a6')"><li class = 'item6'><a class = 'directorio'  id = 'a6' href = '../index.html'> >>Vuelve al directorio</a></li></div>
+        </div>
+    </nav>
+    <div class = 'encender' onclick="encender() ">
+    <audio id = 'audio1'>
+        <source src = 'RCC.mp3' type="audio/mp3">
+    </audio>    
+    <button id = 'play' onclick="play()">PLAY...
+    </button>
+     </div>
+</body>
+</html>

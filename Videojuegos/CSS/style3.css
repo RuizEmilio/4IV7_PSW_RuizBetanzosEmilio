@@ -1,0 +1,116 @@
+@keyframes mecanografiado {
+    from{
+        width: 0px;
+    }
+
+}
+
+*{
+    font-family: monospace;
+}
+
+body{
+    background-image: url(../JPG/fosforo\ verde.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container1{
+    width: 1275px;
+    height: 475px;
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+    padding: 3rem;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 10px lawngreen;
+}
+
+.container2{
+    width: 630px;
+    height: 230px;
+    float: left;
+}
+
+.container3{
+    width: 630px;
+    height: 230px;
+    float: left;
+}
+
+.container4{
+    width: 630px;
+    height: 230px;
+    float: right;
+}
+
+.container5{
+    width: 630px;
+    height: 230px;
+    float: right;
+}
+
+.container6{
+    text-align: center;
+    height: 20px;
+    margin-top: 462px;
+}
+
+.img1{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-color: lawngreen;
+    border-style: dashed;
+}
+
+.img2{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-color: lawngreen;
+    border-style: dashed;
+}
+
+.article1{
+    width: 22rem;
+    height: 15rem;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 1.5rem;
+    color: lawngreen;
+    animation: mecanografiado 1s steps(310);
+}
+
+.article2{
+    width: 22rem;
+    height: 15rem;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 1.5rem;
+    color: lawngreen;
+    animation: mecanografiado 1s steps(310);
+}
+
+.article3{
+    width: 22rem;
+    height: 15rem;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 1.5rem;
+    color: lawngreen;
+    animation: mecanografiado 1s steps(310);
+}
+
+.article4{
+    width: 22rem;
+    height: 15rem;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 1.5rem;
+    color: lawngreen;
+    animation: mecanografiado 1s steps(310);
+}
+
+.menu{
+    color: lawngreen;
+}

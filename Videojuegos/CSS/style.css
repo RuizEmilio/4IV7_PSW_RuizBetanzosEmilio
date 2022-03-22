@@ -1,0 +1,142 @@
+@keyframes cambio_color {
+    from{
+        box-shadow: 0px 0px 10px rgb(240, 156, 60);
+    }
+    to{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+}
+
+@keyframes mecanografiado {
+    from{
+        width: 0px;
+    }
+
+}
+
+*{
+    font-family: monospace;
+}
+
+body{
+    background-image: url(../JPG/fosforo\ verde.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container1{
+    width: 1275px;
+    height: 475px;
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+    padding: 2.5rem;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px lawngreen;
+    opacity: 0;
+}
+
+a{
+    color: lawngreen;
+}
+
+.item1{
+    width: 16ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(16);
+    overflow: hidden;
+}
+
+.item2{
+    width: 14ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(14);
+    overflow: hidden;
+}
+
+.item3{
+    width: 15ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(15);
+    overflow: hidden;
+}
+
+.item4{
+    width: 20ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(20);
+    overflow: hidden;
+}
+
+.item5{
+    width: 11ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(11);
+    overflow: hidden;
+}
+
+.item6{
+    width: 23ch;
+    white-space: nowrap;
+    display: block;
+    animation: mecanografiado 3s steps(23);
+    overflow: hidden;
+    margin-left: 900px;
+}
+
+.seleccion1{
+    width: 1100px;
+    height: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.seleccion2{
+    width: 1100px;
+    height: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.seleccion3{
+    width: 1100px;
+    height: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.seleccion4{
+    width: 1100px;
+    height: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.seleccion5{
+    width: 1100;
+    height: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.encender{
+    width: 75px;
+    height: 50px;
+    margin-left: 1098px;
+    margin-top: 70px;
+    animation: cambio_color 1s alternate infinite;
+}
+
+button{
+    width: 75px;
+    height: 50px;
+    background-color:  rgba(240, 156, 60, 0.637);
+    border: 0px;
+    color: rgb(252, 59, 0);
+    text-shadow: rgb(252, 59, 0);
+    font-size: 1.2rem;
+}
