@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style2.css"/>
+    <title>6IV</title>
+</head>
+<body>
+    <header>
+        <img src="JPG/EscudoPoli.jpg" alt="alt" class = "img2"/>            
+        <h1>SISTEMA ADMINISTRACION DE LABORATORIOS</h1>
+        <img src="JPG/EscudoBatiz.jpg" alt="alt" class = "img2"/>
+    </header>
+    <div class = 'container1'>
+        <form method="post"  action = "GuardarAlumnos" enctype="multipart/form-data" action = "" class="DatosGenerales">
+            <table>
+                <caption><h2>INTRODUCE TUS DATOS</h2></caption>
+                <tr>
+                    <td align="center"><label><b>ESCRIBE TU NOMBRE</b></label></td>
+                    <td align="center"><label><b>ESCRIBE TU APELLIDO PATERNO</b></label></td>
+                    <td align="center"><label><b>ESCRIBE TU APELLIDO MATERNO</b></label></td>
+                </tr>
+                    <td align="center"><input type = "text" name = "Nombre" id = "Nombre" onkeypress="return validar(event)" required></td>
+                    <td align="center"><input type = "text" name = "Appat" id = "Appat" onkeypress="return validar(event)" required></td>
+                    <td align="center"><input type = "text" name = "Apmat" id = "Apmat" onkeypress="return validar(event)" required></td>
+                </tr>
+                <tr>
+                    <td align="center"><label><b>ESCOGE UN GRUPO</b></label></td>
+                    <td align="center"><label><b>ARCHIVO DE SU FOTO</b></label></td>
+                    <td align="center"><label><b>NUMERO TELEFONICO</b></label></td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <select name = "3IM" id = "3IM">
+                        <option selected>6IV1</option>
+                        <option value="3IM1">6IV1</option>
+                        <option value="3IM2">6IV2</option>
+                        <option value="3IM3">6IV3</option>
+                        <option value="3IM4">6IV4</option>
+                        <option value="3IM5">6IV5</option>
+                        <option value="3IM6">6IV6</option>
+                        <option value="3IM7">6IV7</option>
+                        <option value="3IM8">6IV8</option>
+                        <option value="3IM9">6IV9</option>
+                        <option value="3IM10">6IV10</option>
+                        </select>
+                    </td>
+                    <td align="center"><input type = "file" name = "Foto" id = "Foto" onchange="return validarArchivo()"></td>
+                    <td align="center"><input name = "Telefono" id = "Telefono" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" align="center"><input type="button" value="Borrar"></td>
+                    <td align="center"><label><b>NUMERO DE BOLETA</b></label></td>
+                    <td rowspan="2" align="center"><input type="submit"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input name = "Boleta" id = "Boleta" onkeypress="return validar1(event)"></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+        <form method="post" class="TablaAsignaturas">
+            <table>
+                <caption><h2>CARTA COMPROMISO</h2></caption>
+                <tr>
+                    <td align="center"><b>UNIDAD DE APRENDIZAJE</b></td>
+                    <td align="center"><b>LBD</b></td>
+                    <td align="center"><b>LNV</b></td>
+                    <td align="center"><b>LDS</b></td>
+                    <td align="center"><b>4.0</b></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>METODOS AGILES DE PROGRAMACION</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>LAB PTIC IV</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>SOPORTE DE SOFTWARE</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>INGENIERIA DE SOFTWARE BASICA</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>PLAN DE NEGOCIOS</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+                <tr>
+                    <td align="center"><b>PROYECTO INTEGRADOR</b></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                    <td><input name = "Registro" id = "Registro" onkeypress="return validar1(event)"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <a href = 'index.html'>
+            Volver al Menu Principal
+        </a>
+    </footer>
+    <script src = "JS/script1.js"></script>
+</body>
+</html>
