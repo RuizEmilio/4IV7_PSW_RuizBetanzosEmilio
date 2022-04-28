@@ -7,7 +7,7 @@
     <title>Prueba coordenadas</title>
     <p>Sistema de Obtencion de Coordenadas</p>
 
-    
+    <input readonly="readonly" id = 'altura'>
 
 </head>
 <body>
@@ -24,6 +24,7 @@
 			var lat = objPosition.coords.latitude;
             var alt = objPosition.coords.altitude;
             console.log(alt)
+			document.getElementById('altura').value = alt;
 
 		}, function(objPositionError)
 		{
