@@ -8,50 +8,38 @@
     <p>Sistema de Obtencion de Coordenadas</p>
 
     <input readonly="readonly" id = 'altura'>
+	<input readonly="readonly" id = 'longitud'>
+	<input readonly="readonly" id = 'latitud'>
+	<input readonly="readonly" id = 'RESULTADOS'>
 
 </head>
 <body>
 
     <script>
-        (function(){
-	var content = document.getElementById("geolocation-test");
+        function Altura (){
+			navigator.geolocation.getCurrentPosition(Altura2)
+		}
 
-	if (navigator.geolocation)
-	{
-		navigator.geolocation.getCurrentPosition(function(objPosition)
-		{
-			var lon = objPosition.coords.longitude;
-			var lat = objPosition.coords.latitude;
-            var alt = objPosition.coords.altitude;
-            console.log(alt)
-			document.getElementById('altura').value = alt;
-
-		}, function(objPositionError)
-		{
-			switch (objPositionError.code)
-			{
-				case objPositionError.PERMISSION_DENIED:
-					content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
-				break;
-				case objPositionError.POSITION_UNAVAILABLE:
-					content.innerHTML = "No se ha podido acceder a la información de su posición.";
-				break;
-				case objPositionError.TIMEOUT:
-					content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
-				break;
-				default:
-					content.innerHTML = "Error desconocido.";
+		function Altura2 (position){
+			document.getElementById('longitud').value = position.coords.longitude;
+			document.getElementById('latitud').value = position.coords.latitude;
+			if(position.coords.altitude != null){
+				document.getElementById('altura').value = position.coords.altitude;
 			}
-		}, {
-			maximumAge: 75000,
-			timeout: 15000
-		});
-	}
-	else
-	{
-		content.innerHTML = "Su navegador no soporta la API de geolocalización.";
-	}
-})();
+			else{
+				document.getElementById('altura').value = 'NI MODO NO SE PUDO';
+			}
+		}
+
+		function localizacion (){
+			if(navigator.geolocation){
+				navigator.geolocation.watchPosition(muestraPosicion);
+			}
+		}
+
+		function muestraPosicion (position){
+			document.getElementById('RESULTADOS').value = 'LATITUD' + position.coords.latitude + 'LONGITUD' + position.coords.longitude;
+		}
     </script>
 </body>
 </html>
