@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style3.css">
+    <title>CONSULTAR ESPACIOS FISICOS</title>
+</head>
+<body>
+    <header>
+        <a onclick="previo()">
+            <img src = 'JPG/VOLVER.jpg' class = 'img1'>
+        </a>
+        CONSULTA DE ESPACIOS FISICOS
+    </header>
+    <div class = 'container'>
+        <table>
+            <tr>
+                <td>
+                    <select >
+                        <option>EDIFICIO DE AULAS</option>
+                        <option>EDIFICIO DE GOBIERNO</option>
+                        <option>AREAS AL AIRE LIBRE</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>PLANTA BAJA</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = '2'>
+                    <img src = 'JPG/MAPA CONSULTA.jpg' class = 'img2'>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function previo (){
+            let prevUrl = document.referrer;
+            if(prevUrl.indexOf(window.location.host) !== -1) {
+                // Ir a la página anterior
+                window.history.back();
+                }
+        }
+    </script>
+</body>
+</html>

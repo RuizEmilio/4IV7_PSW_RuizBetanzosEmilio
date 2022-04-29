@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style4.css">
+    <title>MENU ALUMNO</title>
+</head>
+<body>
+    <header>
+        <a onclick="previo()">
+            <img src = 'JPG/VOLVER.jpg' class = 'img1'>
+        </a>
+        MENU ALUMNO
+    </header>
+    <div class = 'container'>
+        <table>
+            <tr>
+                <td><img src = 'JPG/FOTO.jpg' class = 'img2'></td>
+            </tr>
+            <tr>
+                <td><div class = 'container2'>NOMBRE : <input value="EMILIO"></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'container3'>APELLIDOS : <input value="RUIZ BETANZOS" class = 'input2'></div></td>
+            </tr>
+            <tr>
+                <td><div class = 'container2'>GRUPO : <input value="4IV7"></div></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function previo (){
+            let prevUrl = document.referrer;
+            if(prevUrl.indexOf(window.location.host) !== -1) {
+                // Ir a la página anterior
+                window.history.back();
+                }
+        }
+    </script>
+</body>
+</html>
